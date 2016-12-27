@@ -22,7 +22,7 @@ import rakuten.webservice.market.product.Entity.RakutenIchibaResponseException;
 
 /**
  *
- * @author 寿成
+ * @author pawn
  */
 public abstract class WebserviceBase {
 

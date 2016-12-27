@@ -7,7 +7,7 @@ package rakuten.webservice.exception;
 
 /**
  *
- * @author 寿成
+ * @author pawn
  */
 public class NotSetVersionException extends Exception {
 

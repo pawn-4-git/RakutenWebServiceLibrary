@@ -10,7 +10,7 @@ import net.arnx.jsonic.JSON;
 
 /**
  *
- * @author 寿成
+ * @author pawn
  */
 public class JsonConverter<T> {
     

@@ -7,7 +7,7 @@ package rakuten.webservice.market.product.Entity;
 
 /**
  *
- * @author 寿成
+ * @author pawn
  */
 public class RakutenIchibaResponseException extends Exception {
 
