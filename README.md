@@ -10,7 +10,7 @@ Java8以降の環境で実行が可能です。
 バージョン0.1</br>
 
 楽天市場商品検索APIの商品情報に対応</br>
-<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.1.jar">RakutenWebServiceLibrary0.1.jar</a>
+<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.1.jar">16/12/28 RakutenWebServiceLibrary0.1.jar</a>
 
 
 <!-- Rakuten Web Services Attribution Snippet FROM HERE -->
