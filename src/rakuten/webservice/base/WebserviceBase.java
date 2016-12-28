@@ -18,7 +18,7 @@ import rakuten.webservice.exception.NotSetURLException;
 import rakuten.webservice.exception.NotSetVersionException;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import rakuten.webservice.market.product.Entity.RakutenIchibaResponseException;
+import rakuten.webservice.exception.RakutenIchibaResponseException;
 
 /**
  *
