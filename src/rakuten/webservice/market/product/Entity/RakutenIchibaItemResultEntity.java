@@ -22,7 +22,11 @@ public class RakutenIchibaItemResultEntity {
     private Integer pageCount;
     
     private List<RakutenIchibaItemResultItemEntity> items=new ArrayList<>();
-
+    
+    private List<String> tagIds=new ArrayList<>();
+    
+    private List<RakutenIchibaItemGenreInformationEntity> genreInformation= new ArrayList<>();
+    
     /**
      * @return the count
      */
@@ -133,6 +137,36 @@ public class RakutenIchibaItemResultEntity {
      */
     public void setItems(List<RakutenIchibaItemResultItemEntity> items) {
         this.items = items;
+    }
+
+    
+
+    /**
+     * @return the tagIds
+     */
+    public List<String> getTagIds() {
+        return tagIds;
+    }
+
+    /**
+     * @param tagIds the tagIds to set
+     */
+    public void setTagIds(List<String> tagIds) {
+        this.tagIds = tagIds;
+    }
+
+    /**
+     * @return the genreInformation
+     */
+    public List<RakutenIchibaItemGenreInformationEntity> getGenreInformation() {
+        return genreInformation;
+    }
+
+    /**
+     * @param genreInformation the genreInformation to set
+     */
+    public void setGenreInformation(List<RakutenIchibaItemGenreInformationEntity> genreInformation) {
+        this.genreInformation = genreInformation;
     }
     
     

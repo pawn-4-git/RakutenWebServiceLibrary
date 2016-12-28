@@ -5,6 +5,8 @@
  */
 package rakuten.webservice.market.product.Entity;
 
+import java.util.List;
+
 /**
  *
  * @author Pawn
@@ -41,6 +43,7 @@ public class RakutenIchibaItemResultItemEntity {
     private String shopCode;
     private String shopUrl;
     private String shopAffiliateUrl;
+    private List<String> tagIds;
 
     /**
      * @return the itemName
@@ -475,4 +478,21 @@ public class RakutenIchibaItemResultItemEntity {
     public void setShopAffiliateUrl(String shopAffiliateUrl) {
         this.shopAffiliateUrl = shopAffiliateUrl;
     }
+
+    /**
+     * @return the tagIds
+     */
+    public List<String> getTagIds() {
+        return tagIds;
+    }
+
+    /**
+     * @param tagIds the tagIds to set
+     */
+    public void setTagIds(List<String> tagIds) {
+        this.tagIds = tagIds;
+    }
+
+    
+    
 }
