@@ -15,7 +15,7 @@ import java.util.List;
 public class RakutenIchibaGenreResultEntity {
    private List<RakutenIchibaGenreResultItemEntity> parents=new ArrayList<>();
    private List<RakutenIchibaGenreResultItemEntity> children=new ArrayList<>();
-   private List<RakutenIchibaGenreResultItemEntity> current=new ArrayList<>();
+   private RakutenIchibaGenreResultItemEntity current=new RakutenIchibaGenreResultItemEntity();
    private List<RakutenIchibaGenreResultItemEntity> brothers=new ArrayList<>();
 
     /**
@@ -63,18 +63,16 @@ public class RakutenIchibaGenreResultEntity {
     /**
      * @return the current
      */
-    public List<RakutenIchibaGenreResultItemEntity> getCurrent() {
+    public RakutenIchibaGenreResultItemEntity getCurrent() {
         return current;
     }
 
     /**
      * @param current the current to set
      */
-    public void setCurrent(List<RakutenIchibaGenreResultItemEntity> current) {
+    public void setCurrent(RakutenIchibaGenreResultItemEntity current) {
         this.current = current;
     }
-   
-   
-   
+
     
 }
