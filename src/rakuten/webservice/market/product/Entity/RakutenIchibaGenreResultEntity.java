@@ -17,6 +17,7 @@ public class RakutenIchibaGenreResultEntity {
    private List<RakutenIchibaGenreResultItemEntity> children=new ArrayList<>();
    private RakutenIchibaGenreResultItemEntity current=new RakutenIchibaGenreResultItemEntity();
    private List<RakutenIchibaGenreResultItemEntity> brothers=new ArrayList<>();
+   private List<RakutenIchibaGenreResultTagGroupEntity> tagGroups=new ArrayList<>();
 
     /**
      * @return the parents
@@ -72,6 +73,20 @@ public class RakutenIchibaGenreResultEntity {
      */
     public void setCurrent(RakutenIchibaGenreResultItemEntity current) {
         this.current = current;
+    }
+
+    /**
+     * @return the tagGroups
+     */
+    public List<RakutenIchibaGenreResultTagGroupEntity> getTagGroups() {
+        return tagGroups;
+    }
+
+    /**
+     * @param tagGroups the tagGroups to set
+     */
+    public void setTagGroups(List<RakutenIchibaGenreResultTagGroupEntity> tagGroups) {
+        this.tagGroups = tagGroups;
     }
 
     
