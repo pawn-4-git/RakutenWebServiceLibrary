@@ -119,15 +119,15 @@ public abstract class WebserviceBase {
         con.connect();
         Map headers = con.getHeaderFields();
         Iterator it = headers.keySet().iterator();
-        System.out.println("レスポンスヘッダ:");
+        //System.out.println("レスポンスヘッダ:");
         while (it.hasNext()){
             String key= (String)it.next();
-           System.out.println("  " + key + ": " + headers.get(key));
+        //   System.out.println("  " + key + ": " + headers.get(key));
         }
 
-        System.out.println("レスポンスコード[" + con.getResponseCode() + "] " +
-                           "レスポンスメッセージ[" + con.getResponseMessage() + "]");
-        System.out.println("\n---- ボディ ----");
+        //System.out.println("レスポンスコード[" + con.getResponseCode() + "] " +
+        //                   "レスポンスメッセージ[" + con.getResponseMessage() + "]");
+        //System.out.println("\n---- ボディ ----");
         
         //エラー対応　エラーがあった場合例外を返します
         switch (con.getResponseCode()) {
