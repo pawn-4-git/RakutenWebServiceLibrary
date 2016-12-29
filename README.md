@@ -6,6 +6,9 @@ RakutenWebServiceLibraryは楽天WEBSERVICEへのアクセスをJavaから行う
 
 Java8以降の環境で実行が可能です。
 
+更新状況は以下のリンク先で公開します<br/>
+<a href="https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/">https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/</a>
+
 ライブラリ</br>
 バージョン0.1.1</br>
 
