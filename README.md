@@ -10,6 +10,12 @@ Java8以降の環境で実行が可能です。
 <a href="https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/">https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/</a>
 
 ・ライブラリ</br>
+バージョン0.1.2</br>
+
+楽天市場タグ検索の機能を追加</br>
+<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.1.2.jar">16/12/30 RakutenWebServiceLibrary0.1.2.jar</a>
+
+
 バージョン0.1.1</br>
 
 楽天市場ジャンル検索の機能を追加</br>
