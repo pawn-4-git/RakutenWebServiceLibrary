@@ -13,7 +13,7 @@ Java8以降の環境で実行が可能です。
 バージョン0.2.1_u1</br>
 
 楽天商品検索の不具合の修正（並び順をENUMを使用するとエラーになる）</br>
-<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.1_u1.jar">17/1/2 RakutenWebServiceLibrary0.2.1_u1.jar</a>
+<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.1_u1.jar">17/1/3 RakutenWebServiceLibrary0.2.1_u1.jar</a>
 
 バージョン0.2.1</br>
 
