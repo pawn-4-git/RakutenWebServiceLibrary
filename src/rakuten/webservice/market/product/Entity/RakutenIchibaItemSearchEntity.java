@@ -163,7 +163,7 @@ public class RakutenIchibaItemSearchEntity {
     }
     
     public void setSort(RakutenIchibaProductSearchSortEnum rakutenIchibaProductSearchSortEnum){
-        this.sort=rakutenIchibaProductSearchSortEnum.toString();
+        this.sort=rakutenIchibaProductSearchSortEnum.getValue();
     }
 
     /**
