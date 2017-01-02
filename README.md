@@ -13,7 +13,7 @@ Java8以降の環境で実行が可能です。
 バージョン0.2.1</br>
 
 楽天ブック検索の機能を追加</br>
-<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.1.jar">16/12/30 RakutenWebServiceLibrary0.1.3.jar</a>
+<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.1.jar">17/1/2 RakutenWebServiceLibrary0.2.1.jar</a>
 
 バージョン0.1.3</br>
 
