@@ -20,7 +20,7 @@ public class RakutenIchibaBooksBookResultItemEntity {
     private String author;
     private String authorKana;
     private String publisherName;
-    private Integer size;
+    private String size;
     private String isbn;
     private String itemCaption;
     private String salesDate;
@@ -194,14 +194,14 @@ public class RakutenIchibaBooksBookResultItemEntity {
     /**
      * @return the size
      */
-    public Integer getSize() {
+    public String getSize() {
         return size;
     }
 
     /**
      * @param size the size to set
      */
-    public void setSize(Integer size) {
+    public void setSize(String size) {
         this.size = size;
     }
 

@@ -10,6 +10,7 @@ import rakuten.webservice.base.JsonConverter;
 import rakuten.webservice.base.WebserviceBase;
 import rakuten.webservice.market.book.Entity.RakutenIchibaBookResultEntity;
 import rakuten.webservice.market.book.Entity.RakutenIchibaBookSearchEntity;
+import rakuten.webservice.market.book.Entity.RakutenIchibaBooksBookResultEntity;
 import rakuten.webservice.market.book.Entity.RakutenIchibaBooksBookSearchEntity;
 import rakuten.webservice.market.product.Entity.RakutenIchibaItemResultEntity;
 import rakuten.webservice.market.product.Entity.RakutenIchibaItemSearchEntity;
@@ -59,7 +60,7 @@ public class RakutenIchibaBooksBookSerchAPI extends WebserviceBase{
         Thread.sleep(1000);
         
         JsonConverter json=new JsonConverter();
-        RakutenIchibaBookResultEntity rakutenIchibaBookResultEntity=(RakutenIchibaBookResultEntity)json.decode(streamStr,RakutenIchibaBookResultEntity.class);
+        RakutenIchibaBooksBookResultEntity rakutenIchibaBookResultEntity=(RakutenIchibaBooksBookResultEntity)json.decode(streamStr,RakutenIchibaBooksBookResultEntity.class);
         
         return rakutenIchibaBookResultEntity;
     }
