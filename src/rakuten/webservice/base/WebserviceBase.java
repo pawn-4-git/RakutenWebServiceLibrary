@@ -162,7 +162,7 @@ public abstract class WebserviceBase {
         }
         
         StringBuilder streamStr;
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream()))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(con.getInputStream(),"UTF-8"))) {
             streamStr = new StringBuilder();
             while (true){
                 String line = reader.readLine();
