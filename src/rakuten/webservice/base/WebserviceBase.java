@@ -84,7 +84,8 @@ public abstract class WebserviceBase {
      */
     public String getUrl() throws Exception{
         url=getBaseURL();
-        
+        String tmpurl=url;
+        String originalUrl=url;
         if(affiliateId!=null){
             url=url+"affiliateId="+affiliateId+"&";
         }
@@ -106,7 +107,9 @@ public abstract class WebserviceBase {
         }).filter((key) -> (!endKey.equals(key))).forEach((_item) -> {
             url=url+"&";
         });
-        return url;
+        tmpurl=url;
+        url=originalUrl;
+        return tmpurl;
     }
     
     public String getHttpResponse() throws MalformedURLException, Exception{
