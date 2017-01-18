@@ -10,6 +10,12 @@ Java8以降の環境で実行が可能です。
 <a href="https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/">https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/</a>
 
 ・ライブラリ</br>
+バージョン0.2.2</br>
+
+楽天ブックス　書籍検索の機能を追加</br>
+<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.2.jar">17/1/8 RakutenWebServiceLibrary0.2.2.jar</a>
+
+
 バージョン0.2.1_u1</br>
 
 楽天商品検索の不具合の修正（並び順をENUMを使用するとエラーになる）</br>
@@ -17,7 +23,7 @@ Java8以降の環境で実行が可能です。
 
 バージョン0.2.1</br>
 
-楽天ブック検索の機能を追加</br>
+楽天ブックス検索の機能を追加</br>
 <a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.1.jar">17/1/2 RakutenWebServiceLibrary0.2.1.jar</a>
 
 バージョン0.1.3</br>
