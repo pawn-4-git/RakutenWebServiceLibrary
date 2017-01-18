@@ -10,6 +10,13 @@ Java8以降の環境で実行が可能です。
 <a href="https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/">https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/</a>
 
 ・ライブラリ</br>
+バージョン0.2.2_u1</br>
+
+下記の不具合に対応<br/>
+1.API取得結果の文字化け対応（文字コードをUTF8に指定）<br/>
+2.２回APIを実行するとリクエストするURLが不正な形になる<br/>
+<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.2_u1.jar">17/1/19 RakutenWebServiceLibrary0.2.2_u1.jar</a>
+
 バージョン0.2.2</br>
 
 楽天ブックス　書籍検索の機能を追加</br>
