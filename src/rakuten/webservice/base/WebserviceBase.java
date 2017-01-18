@@ -50,6 +50,8 @@ public abstract class WebserviceBase {
     private static String ENCODING = "UTF-8";
     private Boolean applicationIdSetFlg=false;
     
+    private String tmpurl;
+    
     //パラメータ設定用マップ
     private Map<String,String> paramap=new LinkedHashMap<>();
     //最後のkeyのための値
@@ -84,31 +86,28 @@ public abstract class WebserviceBase {
      */
     public String getUrl() throws Exception{
         url=getBaseURL();
-        String tmpurl=url;
-        String originalUrl=url;
+        tmpurl=url;
         if(affiliateId!=null){
-            url=url+"affiliateId="+affiliateId+"&";
+            tmpurl=tmpurl+"affiliateId="+affiliateId+"&";
         }
         if(format!=null){
-            url=url+"format="+format+"&";
+            tmpurl=tmpurl+"format="+format+"&";
         }
         if(callback!=null){
-            url=url+"callback="+callback+"&";
+            tmpurl=tmpurl+"callback="+callback+"&";
         }
         if(elements!=null){
-            url=url+"elements="+elements+"&";
+            tmpurl=tmpurl+"elements="+elements+"&";
         }
         if(formatVersion!=null){
-            url=url+"formatVersion="+formatVersion+"&";
+            tmpurl=tmpurl+"formatVersion="+formatVersion+"&";
         }
         getParamap().keySet().stream().map((key) -> {
-            url=url+key+"="+getParamap().get(key);
+            tmpurl=tmpurl+key+"="+getParamap().get(key);
             return key;
         }).filter((key) -> (!endKey.equals(key))).forEach((_item) -> {
-            url=url+"&";
+            tmpurl=tmpurl+"&";
         });
-        tmpurl=url;
-        url=originalUrl;
         return tmpurl;
     }
     
