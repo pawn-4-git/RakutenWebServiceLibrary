@@ -85,8 +85,8 @@ public abstract class WebserviceBase {
      * @throws Exception 
      */
     public String getUrl() throws Exception{
-        url=getBaseURL();
-        tmpurl=url;
+        //url=getBaseURL();
+        tmpurl=new String(getBaseURL());
         if(affiliateId!=null){
             tmpurl=tmpurl+"affiliateId="+affiliateId+"&";
         }
