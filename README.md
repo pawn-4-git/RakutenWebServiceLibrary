@@ -10,6 +10,12 @@ Java8以降の環境で実行が可能です。
 <a href="https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/">https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/</a>
 
 ・ライブラリ</br>
+バージョン0.2.2_u2</br>
+
+下記に対応<br/>
+商品検索結果にジャンルIDの項目に対応<br/>
+<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.2_u2.jar">17/2/12 RakutenWebServiceLibrary0.2.2_u2.jar</a>
+
 バージョン0.2.2_u1</br>
 
 下記の不具合に対応<br/>
