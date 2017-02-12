@@ -43,6 +43,7 @@ public class RakutenIchibaItemResultItemEntity {
     private String shopCode;
     private String shopUrl;
     private String shopAffiliateUrl;
+    private String genreId;
     private List<String> tagIds;
 
     /**
@@ -491,6 +492,20 @@ public class RakutenIchibaItemResultItemEntity {
      */
     public void setTagIds(List<String> tagIds) {
         this.tagIds = tagIds;
+    }
+
+    /**
+     * @return the genreId
+     */
+    public String getGenreId() {
+        return genreId;
+    }
+
+    /**
+     * @param genreId the genreId to set
+     */
+    public void setGenreId(String genreId) {
+        this.genreId = genreId;
     }
 
     
