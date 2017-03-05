@@ -18,8 +18,8 @@ public class RakutenIchibaItemResultItemEntity {
     private String itemPrice;
     private String affiliateUrl;
     private String imageFlag;
-    private String smallImageUrls;
-    private String mediumImageUrls;
+    private List<String> smallImageUrls;
+    private List<String> mediumImageUrls;
     private String availability;
     private String taxFlag;
     private String postageFlag;
@@ -133,28 +133,28 @@ public class RakutenIchibaItemResultItemEntity {
     /**
      * @return the smallImageUrls
      */
-    public String getSmallImageUrls() {
+    public List<String> getSmallImageUrls() {
         return smallImageUrls;
     }
 
     /**
      * @param smallImageUrls the smallImageUrls to set
      */
-    public void setSmallImageUrls(String smallImageUrls) {
+    public void setSmallImageUrls(List<String> smallImageUrls) {
         this.smallImageUrls = smallImageUrls;
     }
 
     /**
      * @return the mediumImageUrls
      */
-    public String getMediumImageUrls() {
+    public List<String> getMediumImageUrls() {
         return mediumImageUrls;
     }
 
     /**
      * @param mediumImageUrls the mediumImageUrls to set
      */
-    public void setMediumImageUrls(String mediumImageUrls) {
+    public void setMediumImageUrls(List<String> mediumImageUrls) {
         this.mediumImageUrls = mediumImageUrls;
     }
 
