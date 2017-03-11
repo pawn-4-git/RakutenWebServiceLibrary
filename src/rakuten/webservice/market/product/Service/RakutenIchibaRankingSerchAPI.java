@@ -7,6 +7,7 @@ package rakuten.webservice.market.product.Service;
 
 import rakuten.webservice.base.JsonConverter;
 import rakuten.webservice.base.WebserviceBase;
+import rakuten.webservice.exception.RakutenIchibaRequestException;
 import rakuten.webservice.market.product.Entity.RakutenIchibaRankingResultEntity;
 import rakuten.webservice.market.product.Entity.RakutenIchibaRankingSearchEntity;
 
@@ -46,7 +47,9 @@ public class RakutenIchibaRankingSerchAPI extends WebserviceBase{
         addParam("carrier", rakutenIchibaRankingSearchEntity.getCarrier());
         addParam("page", rakutenIchibaRankingSearchEntity.getPage());
         addParam("period", rakutenIchibaRankingSearchEntity.getPeriod());
-        
+        if(rakutenIchibaRankingSearchEntity.getAge()!=null&&rakutenIchibaRankingSearchEntity.getPeriod()!=null&&rakutenIchibaRankingSearchEntity.getPeriod().length()>0){
+            throw new RakutenIchibaRequestException("年齢とリアルタイム指定を同時に検索条件にすることはできません");
+        }
         String streamStr=getHttpResponse();
         //API制限対策
         Thread.sleep(1000);
