@@ -10,6 +10,11 @@ Java8以降の環境で実行が可能です。
 <a href="https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/">https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/</a>
 
 ・ライブラリ</br>
+バージョン0.2.3<br>
+下記に対応<br/>
+楽天BOOKSのCD検索の実装
+<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.3.jar">17/4/9 RakutenWebServiceLibrary0.2.3.jar</a>
+
 バージョン0.2.2_u3<br>
 下記に対応<br/>
 楽天商品の画像の複数対応<br>
