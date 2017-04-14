@@ -16,13 +16,13 @@ import rakuten.webservice.market.book.Entity.RakutenIchibaBooksCDSearchEntity;
  * 
  * @author Pawn
  */
-public class RakutenIchibaBooksCDSerchAPI extends WebserviceBase{
+public class RakutenIchibaBooksDVDSerchAPI extends WebserviceBase{
 
     /**
      * 楽天商品検索APIの初期化コンストラクタ
      */
-    public RakutenIchibaBooksCDSerchAPI(){
-        setUrl("https://app.rakuten.co.jp/services/api/BooksCD/Search");
+    public RakutenIchibaBooksDVDSerchAPI(){
+        setUrl("https://app.rakuten.co.jp/services/api/BooksDVD/Search");
         setVersion("20130522");
         setFormat("json");
         setFormatVersion("2");
@@ -36,8 +36,8 @@ public class RakutenIchibaBooksCDSerchAPI extends WebserviceBase{
     
     public Object doSearch(RakutenIchibaBooksCDSearchEntity rakutenIchibaBooksCDSearchEntity) throws Exception {
         
-        if(rakutenIchibaBooksCDSearchEntity.getBooksGenreId()!=null&&!rakutenIchibaBooksCDSearchEntity.getBooksGenreId().startsWith("002")){
-             throw new RakutenIchibaRequestException("楽天ブックスジャンルIDはCD検索では002で始まる必要があります");
+        if(rakutenIchibaBooksCDSearchEntity.getBooksGenreId()!=null&&!rakutenIchibaBooksCDSearchEntity.getBooksGenreId().startsWith("003")){
+             throw new RakutenIchibaRequestException("楽天ブックスジャンルIDはDVD/BluRay検索では003で始まる必要があります");
         }
         
         addParam("title",rakutenIchibaBooksCDSearchEntity.getTitle());
