@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ *楽天ブックのCDDVD検索の結果のクラス
  * @author Pawn
  */
 public class RakutenIchibaBooksCDResultEntity  extends RakutenIchibaBookResultEntity{
