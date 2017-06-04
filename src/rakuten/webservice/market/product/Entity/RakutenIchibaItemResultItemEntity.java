@@ -16,6 +16,7 @@ public class RakutenIchibaItemResultItemEntity {
     private String catchcopy;
     private String itemCode;
     private String itemPrice;
+    private String itemCaption;
     private String affiliateUrl;
     private String imageFlag;
     private List<String> smallImageUrls;
@@ -506,6 +507,20 @@ public class RakutenIchibaItemResultItemEntity {
      */
     public void setGenreId(String genreId) {
         this.genreId = genreId;
+    }
+
+    /**
+     * @return the itemCaption
+     */
+    public String getItemCaption() {
+        return itemCaption;
+    }
+
+    /**
+     * @param itemCaption the itemCaption to set
+     */
+    public void setItemCaption(String itemCaption) {
+        this.itemCaption = itemCaption;
     }
 
     
