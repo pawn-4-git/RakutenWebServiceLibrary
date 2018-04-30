@@ -144,7 +144,7 @@ public abstract class WebserviceBase {
             case 403:
                 //API制限対策
                 Thread.sleep(1000);
-                throw new RakutenIchibaResponseException("レスポンスコード:403が返されました");
+                throw new RakutenIchibaResponseException("レスポンスコード:403 403が返されました");
             case 404:
                 //API制限対策
                 Thread.sleep(1000);
