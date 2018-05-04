@@ -12,6 +12,12 @@ Java8以降の環境で実行が可能です。
 ・ライブラリ</br>
 バージョン0.2.4<br>
 下記に対応<br/>
+楽天BOOKSの雑誌検索および洋書検索の実装
+<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.5.jar">18/5/4 RakutenWebServiceLibrary0.2.5.jar</a>
+
+・ライブラリ</br>
+バージョン0.2.4<br>
+下記に対応<br/>
 楽天BOOKSのDVD検索の実装
 <a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.4.jar">17/5/14 RakutenWebServiceLibrary0.2.4.jar</a>
 
