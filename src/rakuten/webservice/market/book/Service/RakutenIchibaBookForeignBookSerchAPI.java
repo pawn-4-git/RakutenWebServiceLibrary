@@ -5,9 +5,11 @@
  */
 package rakuten.webservice.market.book.Service;
 
+import java.net.URLEncoder;
 import rakuten.webservice.market.product.Service.*;
 import rakuten.webservice.base.JsonConverter;
 import rakuten.webservice.base.WebserviceBase;
+import static rakuten.webservice.base.WebserviceBase.getENCODING;
 import rakuten.webservice.exception.RakutenIchibaRequestException;
 import rakuten.webservice.market.book.Entity.RakutenIchibaBookForeignBookResultEntity;
 import rakuten.webservice.market.book.Entity.RakutenIchibaBookForeignBookSearchEntity;
@@ -47,8 +49,8 @@ public class RakutenIchibaBookForeignBookSerchAPI extends WebserviceBase{
                 &&rakutenIchibaBookForeignBookSearchEntity.getBooksGenreid()==null){
             throw new RakutenIchibaRequestException("タイトルまたは著者、出版社、ISBNコード、ジャンルのいずれかの指定が必要です");
         }
-        if(rakutenIchibaBookForeignBookSearchEntity.getTitle()!=null&&rakutenIchibaBookForeignBookSearchEntity.getTitle().length()<3){
-            throw new RakutenIchibaRequestException("タイトルは３文字以上である必要があります");
+        if(rakutenIchibaBookForeignBookSearchEntity.getTitle()!=null&&URLEncoder.encode(rakutenIchibaBookForeignBookSearchEntity.getTitle(), getENCODING()).length()<3){
+            throw new RakutenIchibaRequestException("タイトルは３バイト以上である必要があります");
         }
         
         addParam("title",rakutenIchibaBookForeignBookSearchEntity.getTitle());
