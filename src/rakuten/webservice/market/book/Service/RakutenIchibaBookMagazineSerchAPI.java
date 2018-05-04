@@ -5,9 +5,13 @@
  */
 package rakuten.webservice.market.book.Service;
 
+import java.net.URLEncoder;
+import static net.arnx.jsonic.JSON.encode;
 import rakuten.webservice.market.product.Service.*;
 import rakuten.webservice.base.JsonConverter;
 import rakuten.webservice.base.WebserviceBase;
+import static rakuten.webservice.base.WebserviceBase.getENCODING;
+import rakuten.webservice.exception.RakutenIchibaRequestException;
 import rakuten.webservice.market.book.Entity.RakutenIchibaBookForeignBookResultEntity;
 import rakuten.webservice.market.book.Entity.RakutenIchibaBookForeignBookSearchEntity;
 import rakuten.webservice.market.book.Entity.RakutenIchibaBookMagazineResultEntity;
@@ -28,7 +32,7 @@ public class RakutenIchibaBookMagazineSerchAPI extends WebserviceBase{
      */
     public RakutenIchibaBookMagazineSerchAPI(){
         setUrl("https://app.rakuten.co.jp/services/api/BooksMagazine/Search");
-        setVersion("20140404");
+        setVersion("20170404");
         setFormat("json");
         setFormatVersion("2");
     }
@@ -40,6 +44,11 @@ public class RakutenIchibaBookMagazineSerchAPI extends WebserviceBase{
     }
     
     public Object doSearch(RakutenIchibaBookMagazineSearchEntity rakutenIchibaBookMagazineSearchEntity) throws Exception {
+        
+        if(rakutenIchibaBookMagazineSearchEntity.getTitle()!=null&&URLEncoder.encode(rakutenIchibaBookMagazineSearchEntity.getTitle(), getENCODING()).length()<3){
+            throw new RakutenIchibaRequestException("タイトルは３バイト以上である必要があります");
+        }
+        
         
         addParam("title",rakutenIchibaBookMagazineSearchEntity.getTitle());
         addParam("publishName",rakutenIchibaBookMagazineSearchEntity.getPublisherName());
