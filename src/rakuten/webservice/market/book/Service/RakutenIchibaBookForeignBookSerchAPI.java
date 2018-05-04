@@ -8,6 +8,7 @@ package rakuten.webservice.market.book.Service;
 import rakuten.webservice.market.product.Service.*;
 import rakuten.webservice.base.JsonConverter;
 import rakuten.webservice.base.WebserviceBase;
+import rakuten.webservice.exception.RakutenIchibaRequestException;
 import rakuten.webservice.market.book.Entity.RakutenIchibaBookForeignBookResultEntity;
 import rakuten.webservice.market.book.Entity.RakutenIchibaBookForeignBookSearchEntity;
 import rakuten.webservice.market.book.Entity.RakutenIchibaBookResultEntity;
@@ -26,7 +27,7 @@ public class RakutenIchibaBookForeignBookSerchAPI extends WebserviceBase{
      */
     public RakutenIchibaBookForeignBookSerchAPI(){
         setUrl("https://app.rakuten.co.jp/services/api/BooksForeignBook/Search");
-        setVersion("20140404");
+        setVersion("20170404");
         setFormat("json");
         setFormatVersion("2");
     }
@@ -39,11 +40,23 @@ public class RakutenIchibaBookForeignBookSerchAPI extends WebserviceBase{
     
     public Object doSearch(RakutenIchibaBookForeignBookSearchEntity rakutenIchibaBookForeignBookSearchEntity) throws Exception {
         
+        
+        if(rakutenIchibaBookForeignBookSearchEntity.getTitle()==null&&rakutenIchibaBookForeignBookSearchEntity.getAuther()==null
+                &&rakutenIchibaBookForeignBookSearchEntity.getPublisherName()==null
+                &&rakutenIchibaBookForeignBookSearchEntity.getIsbn()==null
+                &&rakutenIchibaBookForeignBookSearchEntity.getBooksGenreid()==null){
+            throw new RakutenIchibaRequestException("タイトルまたは著者、出版社、ISBNコード、ジャンルのいずれかの指定が必要です");
+        }
+        if(rakutenIchibaBookForeignBookSearchEntity.getTitle()!=null&&rakutenIchibaBookForeignBookSearchEntity.getTitle().length()<3){
+            throw new RakutenIchibaRequestException("タイトルは３文字以上である必要があります");
+        }
+        
         addParam("title",rakutenIchibaBookForeignBookSearchEntity.getTitle());
         addParam("auther",rakutenIchibaBookForeignBookSearchEntity.getAuther());
         addParam("publishName",rakutenIchibaBookForeignBookSearchEntity.getPublisherName());
         addParam("isbn",rakutenIchibaBookForeignBookSearchEntity.getIsbn());
         addParam("booksGenreid",rakutenIchibaBookForeignBookSearchEntity.getBooksGenreid());
+        
         
         addParam("hits",rakutenIchibaBookForeignBookSearchEntity.getHits());
         addParam("page",rakutenIchibaBookForeignBookSearchEntity.getPage());
