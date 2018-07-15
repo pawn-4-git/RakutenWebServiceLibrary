@@ -5,6 +5,8 @@
  */
 package rakuten.webservice.market.book.Entity;
 
+import rakuten.webservice.market.book.Enum.RakutenBooksSortEnum;
+
 
 /**
  *
@@ -152,6 +154,10 @@ public class RakutenIchibaBookSearchEntity {
      */
     public void setSort(String sort) {
         this.sort = sort;
+    }
+    
+    public void setSort(RakutenBooksSortEnum sort) {
+        this.sort = sort.getValue();
     }
 
     /**
