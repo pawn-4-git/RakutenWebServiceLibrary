@@ -5,6 +5,7 @@
  */
 package rakuten.webservice.market.book.Service;
 
+import java.util.LinkedHashMap;
 import rakuten.webservice.market.product.Service.*;
 import rakuten.webservice.base.JsonConverter;
 import rakuten.webservice.base.WebserviceBase;
@@ -36,6 +37,8 @@ public class RakutenIchibaBookSerchAPI extends WebserviceBase{
     }
     
     public Object doSearch(RakutenIchibaBookSearchEntity rakutenIchibaBookSearchEntity) throws Exception {
+        
+        this.setParamap(new LinkedHashMap<>());
         
         addParam("keyword",rakutenIchibaBookSearchEntity.getKeyword());
         addParam("booksGenreId",rakutenIchibaBookSearchEntity.getBooksGenreId());
