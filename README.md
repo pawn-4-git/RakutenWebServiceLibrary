@@ -10,6 +10,12 @@ Java8以降の環境で実行が可能です。
 <a href="https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/">https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/</a>
 
 ・ライブラリ</br>
+バージョン0.2.6.1<br>
+下記に対応<br/>
+複数検索した際にパラメータが正しく設定されない不具合修正
+<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.6.1.jar">18/8/19 RakutenWebServiceLibrary0.2.6.1.jar</a>
+
+・ライブラリ</br>
 バージョン0.2.6<br>
 下記に対応<br/>
 楽天BOOKSのゲームおよびソフトウェア検索および洋書検索の実装
@@ -17,7 +23,7 @@ Java8以降の環境で実行が可能です。
 
 
 ・ライブラリ</br>
-バージョン0.2.<br>
+バージョン0.2.5<br>
 下記に対応<br/>
 楽天BOOKSの雑誌検索および洋書検索の実装
 <a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.5.jar">18/5/4 RakutenWebServiceLibrary0.2.5.jar</a>
