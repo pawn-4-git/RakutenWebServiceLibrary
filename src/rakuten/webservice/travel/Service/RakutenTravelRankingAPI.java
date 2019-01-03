@@ -37,7 +37,7 @@ public class RakutenTravelRankingAPI extends WebserviceBase{
     
     /**
      * タグの検索を行う
-     * @param rakutenIchibaTagSearchEntity
+     * @param rakutenTravelRankingSearchEntity
      * @return
      * @throws Exception 
      */

@@ -5,11 +5,6 @@
  */
 package rakuten.webservice.travel.Entity;
 
-import rakuten.webservice.market.product.Entity.*;
-import rakuten.webservice.market.product.Enum.RakutenIchibaGenreGenrePathEnum;
-import rakuten.webservice.market.product.Enum.RakutenIchibaProductSearchAvailabilityEnum;
-import rakuten.webservice.market.product.Enum.RakutenIchibaProductSearchOrFlgEnum;
-import rakuten.webservice.market.product.Enum.RakutenIchibaProductSearchSortEnum;
 
 /**
  *
