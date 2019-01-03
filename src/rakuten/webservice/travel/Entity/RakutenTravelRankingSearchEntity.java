@@ -5,6 +5,10 @@
  */
 package rakuten.webservice.travel.Entity;
 
+import java.util.HashMap;
+import java.util.Map;
+import rakuten.webservice.travel.Enum.RakutenRankingGenre;
+
 
 /**
  *
@@ -14,7 +18,7 @@ public class RakutenTravelRankingSearchEntity {
     private String genre="";
     private int carrier=0;
 
-   
+    Map<RakutenRankingGenre,String> genreList=new HashMap<>();
 
     /**
      * @return the carrier
@@ -44,6 +48,32 @@ public class RakutenTravelRankingSearchEntity {
         this.genre = genre;
     }
 
-   
+    public void addGenre(RakutenRankingGenre rakutenRankingGenre){
+        genreList.put(rakutenRankingGenre, rakutenRankingGenre.getValue());
+        StringBuilder genreStr=new StringBuilder();
+        int i=0;
+        for(RakutenRankingGenre genre:genreList.keySet()){
+            genreStr=genreStr.append(genreList.get(genre));
+            i++;
+            if(i!=genreList.size()){
+                genreStr.append(",");
+            }
+        }
+        this.genre=genreStr.toString();
+    }
+    
+    public void deleteGenre(RakutenRankingGenre rakutenRankingGenre){
+        genreList.remove(rakutenRankingGenre, rakutenRankingGenre.getValue());
+        StringBuilder genreStr=new StringBuilder();
+        int i=0;
+        for(RakutenRankingGenre genre:genreList.keySet()){
+            genreStr=genreStr.append(genreList.get(genre));
+            i++;
+            if(i!=genreList.size()){
+                genreStr.append(",");
+            }
+        }
+        this.genre=genreStr.toString();
+    }
     
 }
