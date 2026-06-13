@@ -22,8 +22,8 @@ public class RakutenIchibaGenreSerchAPI extends WebserviceBase{
      * 楽天商品検索APIの初期化コンストラクタ
      */
     public RakutenIchibaGenreSerchAPI(){
-        setUrl("https://app.rakuten.co.jp/services/api/IchibaGenre/Search/");
-        setVersion("20140222");
+        setUrl("https://openapi.rakuten.co.jp/ichibagt/api/IchibaGenre/Search");
+        setVersion("20260401");
         setFormat("json");
         setFormatVersion("2");
     }
@@ -31,6 +31,12 @@ public class RakutenIchibaGenreSerchAPI extends WebserviceBase{
     
     public void setAccessParameter(String applicationId){
         setApplicationId(applicationId);
+        setApplicationIdSetFlg(Boolean.TRUE);
+    }
+    
+    public void setAccessParameter(String applicationId, String accessKey){
+        setApplicationId(applicationId);
+        setAccessKey(accessKey);
         setApplicationIdSetFlg(Boolean.TRUE);
     }
     

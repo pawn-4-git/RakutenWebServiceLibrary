@@ -23,7 +23,7 @@ public class RakutenIchibaBookSoftWareSerchAPI extends WebserviceBase{
      * 楽天商品検索APIの初期化コンストラクタ
      */
     public RakutenIchibaBookSoftWareSerchAPI(){
-        setUrl("https://app.rakuten.co.jp/services/api/BooksSoftware/Search");
+        setUrl("https://openapi.rakuten.co.jp/services/api/BooksSoftware/Search");
         setVersion("20170404");
         setFormat("json");
         setFormatVersion("2");
@@ -32,6 +32,12 @@ public class RakutenIchibaBookSoftWareSerchAPI extends WebserviceBase{
     
     public void setAccessParameter(String applicationId){
         setApplicationId(applicationId);
+        setApplicationIdSetFlg(Boolean.TRUE);
+    }
+    
+    public void setAccessParameter(String applicationId, String accessKey){
+        setApplicationId(applicationId);
+        setAccessKey(accessKey);
         setApplicationIdSetFlg(Boolean.TRUE);
     }
     
