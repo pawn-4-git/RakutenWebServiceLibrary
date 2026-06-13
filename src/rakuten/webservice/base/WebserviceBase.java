@@ -42,6 +42,7 @@ public abstract class WebserviceBase {
     private String url="";
     private String version="";
     private String applicationId="";
+    private String accessKey=null;
     private String affiliateId=null;
     private String format=null;
     private String callback=null;
@@ -87,6 +88,9 @@ public abstract class WebserviceBase {
     public String getUrl() throws Exception{
         //url=getBaseURL();
         tmpurl=new String(getBaseURL());
+        if(accessKey!=null){
+            tmpurl=tmpurl+"accessKey="+accessKey+"&";
+        }
         if(affiliateId!=null){
             tmpurl=tmpurl+"affiliateId="+affiliateId+"&";
         }
@@ -243,6 +247,20 @@ public abstract class WebserviceBase {
      */
     public void setApplicationId(String applicationId) {
         this.applicationId = applicationId;
+    }
+
+    /**
+     * @return the accessKey
+     */
+    public String getAccessKey() {
+        return accessKey;
+    }
+
+    /**
+     * @param accessKey the accessKey to set
+     */
+    public void setAccessKey(String accessKey) {
+        this.accessKey = accessKey;
     }
 
     /**

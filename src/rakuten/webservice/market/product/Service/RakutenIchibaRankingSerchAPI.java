@@ -21,8 +21,8 @@ public class RakutenIchibaRankingSerchAPI extends WebserviceBase{
      * 楽天商品検索APIの初期化コンストラクタ
      */
     public RakutenIchibaRankingSerchAPI(){
-        setUrl("https://app.rakuten.co.jp/services/api/IchibaItem/Ranking");
-        setVersion("20120927");
+        setUrl("https://openapi.rakuten.co.jp/ichibaranking/api/IchibaItem/Ranking");
+        setVersion("20220601");
         setFormat("json");
         setFormatVersion("2");
     }
@@ -30,6 +30,12 @@ public class RakutenIchibaRankingSerchAPI extends WebserviceBase{
     
     public void setAccessParameter(String applicationId){
         setApplicationId(applicationId);
+        setApplicationIdSetFlg(Boolean.TRUE);
+    }
+    
+    public void setAccessParameter(String applicationId, String accessKey){
+        setApplicationId(applicationId);
+        setAccessKey(accessKey);
         setApplicationIdSetFlg(Boolean.TRUE);
     }
     

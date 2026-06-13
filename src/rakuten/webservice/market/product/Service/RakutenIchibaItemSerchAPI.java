@@ -20,8 +20,8 @@ public class RakutenIchibaItemSerchAPI extends WebserviceBase{
      * 楽天商品検索APIの初期化コンストラクタ
      */
     public RakutenIchibaItemSerchAPI(){
-        setUrl("https://app.rakuten.co.jp/services/api/IchibaItem/Search");
-        setVersion("20140222");
+        setUrl("https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search");
+        setVersion("20260401");
         setFormat("json");
         setFormatVersion("2");
     }
@@ -29,6 +29,12 @@ public class RakutenIchibaItemSerchAPI extends WebserviceBase{
     
     public void setAccessParameter(String applicationId){
         setApplicationId(applicationId);
+        setApplicationIdSetFlg(Boolean.TRUE);
+    }
+    
+    public void setAccessParameter(String applicationId, String accessKey){
+        setApplicationId(applicationId);
+        setAccessKey(accessKey);
         setApplicationIdSetFlg(Boolean.TRUE);
     }
     
@@ -45,7 +51,7 @@ public class RakutenIchibaItemSerchAPI extends WebserviceBase{
         addParam("maxPrice",rakutenIchibaItemSearchEntity.getMaxPrice());
         addParam("availability",rakutenIchibaItemSearchEntity.getAvailability());
         addParam("field",rakutenIchibaItemSearchEntity.getField());
-        addParam("garrier",rakutenIchibaItemSearchEntity.getCarrier());
+        addParam("carrier",rakutenIchibaItemSearchEntity.getCarrier());
         addParam("imageFlag",rakutenIchibaItemSearchEntity.getImageFlag());
         addParam("orFlag",rakutenIchibaItemSearchEntity.getOrFlag());
         addParam("NGKeyword",rakutenIchibaItemSearchEntity.getNGKeyword());

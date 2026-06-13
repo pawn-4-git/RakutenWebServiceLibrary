@@ -20,7 +20,7 @@ public class RakutenIchibaTagSerchAPI extends WebserviceBase{
      * 楽天商品検索APIの初期化コンストラクタ
      */
     public RakutenIchibaTagSerchAPI(){
-        setUrl("https://app.rakuten.co.jp/services/api/IchibaTag/Search");
+        setUrl("https://openapi.rakuten.co.jp/ichibagt/api/IchibaTag/Search");
         setVersion("20140222");
         setFormat("json");
         setFormatVersion("2");
@@ -29,6 +29,12 @@ public class RakutenIchibaTagSerchAPI extends WebserviceBase{
     
     public void setAccessParameter(String applicationId){
         setApplicationId(applicationId);
+        setApplicationIdSetFlg(Boolean.TRUE);
+    }
+    
+    public void setAccessParameter(String applicationId, String accessKey){
+        setApplicationId(applicationId);
+        setAccessKey(accessKey);
         setApplicationIdSetFlg(Boolean.TRUE);
     }
     

@@ -10,6 +10,14 @@ Java8以降の環境で実行が可能です。
 <a href="https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/">https://whiletruedotcom.wordpress.com/category/%E6%A5%BD%E5%A4%A9web%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/</a>
 
 ・ライブラリ</br>
+バージョン0.2.7<br>
+下記に対応<br/>
+1. 楽天APIのインフラ刷新に伴うリクエスト先エンドポイントおよびバージョンの更新（`openapi.rakuten.co.jp` への移行）
+2. 認証方式変更に伴う `accessKey` パラメータのサポート追加（`setAccessParameter(applicationId, accessKey)` のオーバーロードを追加）
+3. 楽天市場商品検索APIにおけるクエリパラメータ名のタイポ修正（`garrier` -> `carrier`）
+<a href="https://github.com/pawn-4-git/RakutenWebServiceLibrary/blob/master/Library/RakutenWebServiceLibrary0.2.7.jar">26/6/13 RakutenWebServiceLibrary0.2.7.jar</a>
+
+・ライブラリ</br>
 バージョン0.2.6.1<br>
 下記に対応<br/>
 複数検索した際にパラメータが正しく設定されない不具合修正
